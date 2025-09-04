@@ -1,0 +1,42 @@
+# Node dependencies
+/node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Temporary folders (uploads, temp processing, cache, etc.)
+temp/
+uploads/
+.cache/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build / coverage / dist
+dist/
+build/
+coverage/
+
+# Render specific
+render.yaml
+node_modules/
+temp/
+.env
+uploads/
