@@ -16,7 +16,7 @@ router.post('/', upload.single('audio'), (req, res) => {
   const outputPath = `outputs/${Date.now()}-enhanced.mp3`; // Unique output filename
 
   ffmpeg(inputPath)
-    .audioFilters('volume=2') // Apply volume boost (2x)
+    .audioFilters('volume=50') // Apply volume boost (2x)
     .toFormat('mp3') // Convert to MP3 format
     .on('end', () => {
       res.download(outputPath, () => {
